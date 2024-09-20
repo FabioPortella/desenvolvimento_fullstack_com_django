@@ -1,0 +1,13 @@
+<h1>Encaminhando uma mensagem</h1>
+
+<form action="{% url "contacts:create" %}" method="post" novalidate>
+    {% csrf_token %}
+    {{ form.as_p }}
+    <input type= "submit" value="enviar">
+</form>
+
+<br>
+
+<a href=" {% url "accounts:logout" %}"> Fazer logout </a>
+
+<p>Você está logado com o usuário: {{user}} </p>
