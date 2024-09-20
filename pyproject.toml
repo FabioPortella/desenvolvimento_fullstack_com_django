@@ -12,6 +12,10 @@ django = "*"
 
 [tool.poetry.group.dev.dependencies]
 ipython = "*"
+pytest-django = "*"
+
+[tool.pytest.ini_options]
+DJANGO_SETTINGS_MODULE = "mysite.settings"
 
 [build-system]
 requires = ["poetry-core"]
