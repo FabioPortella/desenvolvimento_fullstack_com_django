@@ -13,4 +13,10 @@ python manage.py collectstatic --no-input
 python manage.py migrate
 
 # Criando um superuser
-python manage.py createsuperuser --no-input
+# python manage.py createsuperuser --no-input
+
+# Adicionar estas variaves de ambiante
+# DJANGO_SUPERUSER_EMAIL
+# DJANGO_SUPERUSER_PASSWORD
+# DJANGO_SUPERUSER_USERNAME
+
