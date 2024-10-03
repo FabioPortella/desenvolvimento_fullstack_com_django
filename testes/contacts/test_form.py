@@ -24,7 +24,8 @@ def test_name_form_you_name_max_length():
     # Then
     assert result is False
     assert form.errors == {
-        "your_name": ["Certifique-se de que o valor tenha no máximo 100 caracteres (ele possui 250)."]
+        "your_name":
+        ["Certifique-se de que o valor tenha no máximo 100 caracteres (ele possui 250)."]
         }
 
 
